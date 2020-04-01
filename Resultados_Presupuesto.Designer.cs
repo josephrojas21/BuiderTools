@@ -183,7 +183,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.ClientSize = new System.Drawing.Size(455, 405);
+            this.ClientSize = new System.Drawing.Size(455, 415);
             this.Controls.Add(this.panel1);
             this.Name = "Resultados_Presupuesto";
             this.Text = "Resultados_Presupuesto";
