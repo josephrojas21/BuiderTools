@@ -37,11 +37,11 @@
             this.lblE_mail = new System.Windows.Forms.Label();
             this.lblApellido = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblRegistroUsuario = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.ptBRegistroUsuario = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptBRegistroUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -56,7 +56,7 @@
             this.panel1.Controls.Add(this.lblE_mail);
             this.panel1.Controls.Add(this.lblApellido);
             this.panel1.Controls.Add(this.lblNombre);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.ptBRegistroUsuario);
             this.panel1.Controls.Add(this.lblRegistroUsuario);
             this.panel1.Location = new System.Drawing.Point(38, 35);
             this.panel1.Name = "panel1";
@@ -143,16 +143,6 @@
             this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "Nombre";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BuilderTools.Properties.Resources.Usuario;
-            this.pictureBox1.Location = new System.Drawing.Point(293, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 65);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // lblRegistroUsuario
             // 
             this.lblRegistroUsuario.AutoSize = true;
@@ -176,6 +166,16 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
             // 
+            // ptBRegistroUsuario
+            // 
+            this.ptBRegistroUsuario.Image = global::BuilderTools.Properties.Resources.Usuario;
+            this.ptBRegistroUsuario.Location = new System.Drawing.Point(293, 3);
+            this.ptBRegistroUsuario.Name = "ptBRegistroUsuario";
+            this.ptBRegistroUsuario.Size = new System.Drawing.Size(80, 65);
+            this.ptBRegistroUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptBRegistroUsuario.TabIndex = 1;
+            this.ptBRegistroUsuario.TabStop = false;
+            // 
             // registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -187,7 +187,7 @@
             this.Text = "registro";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptBRegistroUsuario)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -196,7 +196,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblRegistroUsuario;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ptBRegistroUsuario;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.TextBox txtE_mail;
         private System.Windows.Forms.TextBox txtApellido;

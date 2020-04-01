@@ -16,7 +16,7 @@ namespace BuilderTools
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new home());
+            Application.Run(new Resultados_Presupuesto());
         }
     }
 }

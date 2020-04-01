@@ -35,12 +35,12 @@
             this.lblBuilderTools = new System.Windows.Forms.Label();
             this.lblCalcularObra = new System.Windows.Forms.Label();
             this.lblMisObras = new System.Windows.Forms.Label();
-            this.lblAyuda = new System.Windows.Forms.Label();
+            this.lblSoporteTecnico = new System.Windows.Forms.Label();
+            this.btnCerrar_Sesion = new System.Windows.Forms.Button();
             this.btnAyuda = new System.Windows.Forms.Button();
             this.btnMisObras = new System.Windows.Forms.Button();
             this.btnCalcularObra = new System.Windows.Forms.Button();
             this.ptbUsuario = new System.Windows.Forms.PictureBox();
-            this.btnCerrar_Sesion = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).BeginInit();
@@ -101,7 +101,7 @@
             // 
             this.lblCalcularObra.AutoSize = true;
             this.lblCalcularObra.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCalcularObra.Location = new System.Drawing.Point(253, 311);
+            this.lblCalcularObra.Location = new System.Drawing.Point(252, 310);
             this.lblCalcularObra.Name = "lblCalcularObra";
             this.lblCalcularObra.Size = new System.Drawing.Size(138, 16);
             this.lblCalcularObra.TabIndex = 5;
@@ -111,21 +111,34 @@
             // 
             this.lblMisObras.AutoSize = true;
             this.lblMisObras.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMisObras.Location = new System.Drawing.Point(461, 310);
+            this.lblMisObras.Location = new System.Drawing.Point(463, 310);
             this.lblMisObras.Name = "lblMisObras";
             this.lblMisObras.Size = new System.Drawing.Size(98, 16);
             this.lblMisObras.TabIndex = 6;
             this.lblMisObras.Text = "Mis obras";
             // 
-            // lblAyuda
+            // lblSoporteTecnico
             // 
-            this.lblAyuda.AutoSize = true;
-            this.lblAyuda.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAyuda.Location = new System.Drawing.Point(684, 311);
-            this.lblAyuda.Name = "lblAyuda";
-            this.lblAyuda.Size = new System.Drawing.Size(58, 16);
-            this.lblAyuda.TabIndex = 7;
-            this.lblAyuda.Text = "Ayuda";
+            this.lblSoporteTecnico.AutoSize = true;
+            this.lblSoporteTecnico.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoporteTecnico.Location = new System.Drawing.Point(630, 310);
+            this.lblSoporteTecnico.Name = "lblSoporteTecnico";
+            this.lblSoporteTecnico.Size = new System.Drawing.Size(158, 16);
+            this.lblSoporteTecnico.TabIndex = 7;
+            this.lblSoporteTecnico.Text = "Soporte técnico";
+            // 
+            // btnCerrar_Sesion
+            // 
+            this.btnCerrar_Sesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.btnCerrar_Sesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar_Sesion.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar_Sesion.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCerrar_Sesion.Location = new System.Drawing.Point(460, 16);
+            this.btnCerrar_Sesion.Name = "btnCerrar_Sesion";
+            this.btnCerrar_Sesion.Size = new System.Drawing.Size(127, 32);
+            this.btnCerrar_Sesion.TabIndex = 6;
+            this.btnCerrar_Sesion.Text = "Cerrar sesión";
+            this.btnCerrar_Sesion.UseVisualStyleBackColor = false;
             // 
             // btnAyuda
             // 
@@ -168,26 +181,13 @@
             this.ptbUsuario.TabIndex = 0;
             this.ptbUsuario.TabStop = false;
             // 
-            // btnCerrar_Sesion
-            // 
-            this.btnCerrar_Sesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.btnCerrar_Sesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar_Sesion.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar_Sesion.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCerrar_Sesion.Location = new System.Drawing.Point(460, 16);
-            this.btnCerrar_Sesion.Name = "btnCerrar_Sesion";
-            this.btnCerrar_Sesion.Size = new System.Drawing.Size(127, 32);
-            this.btnCerrar_Sesion.TabIndex = 6;
-            this.btnCerrar_Sesion.Text = "Cerrar sesión";
-            this.btnCerrar_Sesion.UseVisualStyleBackColor = false;
-            // 
             // home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.ClientSize = new System.Drawing.Size(800, 405);
-            this.Controls.Add(this.lblAyuda);
+            this.Controls.Add(this.lblSoporteTecnico);
             this.Controls.Add(this.lblMisObras);
             this.Controls.Add(this.lblCalcularObra);
             this.Controls.Add(this.btnAyuda);
@@ -219,7 +219,7 @@
         private System.Windows.Forms.Button btnAyuda;
         private System.Windows.Forms.Label lblCalcularObra;
         private System.Windows.Forms.Label lblMisObras;
-        private System.Windows.Forms.Label lblAyuda;
+        private System.Windows.Forms.Label lblSoporteTecnico;
         private System.Windows.Forms.Label lblHome;
         private System.Windows.Forms.Button btnCerrar_Sesion;
     }
