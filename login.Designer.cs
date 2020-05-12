@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.btnRegistrarse = new System.Windows.Forms.Button();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.lblContraseña = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.lblTitulo = new System.Windows.Forms.Label();
             this.ptbTitulo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbTitulo)).BeginInit();
@@ -57,6 +57,16 @@
             this.panel1.Size = new System.Drawing.Size(320, 424);
             this.panel1.TabIndex = 1;
             // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(71, 141);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(190, 24);
+            this.lblTitulo.TabIndex = 7;
+            this.lblTitulo.Text = "BuilderTools";
+            // 
             // btnRegistrarse
             // 
             this.btnRegistrarse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -69,6 +79,7 @@
             this.btnRegistrarse.TabIndex = 6;
             this.btnRegistrarse.Text = "Registrarse";
             this.btnRegistrarse.UseVisualStyleBackColor = false;
+            this.btnRegistrarse.Click += new System.EventHandler(this.btnRegistrarse_Click);
             // 
             // btnIngresar
             // 
@@ -82,15 +93,17 @@
             this.btnIngresar.TabIndex = 5;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = false;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // txtContraseña
             // 
             this.txtContraseña.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.txtContraseña.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtContraseña.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.Location = new System.Drawing.Point(42, 310);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(231, 25);
+            this.txtContraseña.PasswordChar = '*';
+            this.txtContraseña.Size = new System.Drawing.Size(231, 24);
             this.txtContraseña.TabIndex = 4;
             // 
             // lblContraseña
@@ -107,10 +120,10 @@
             // 
             this.txtUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtUsuario.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(42, 234);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(231, 25);
+            this.txtUsuario.Size = new System.Drawing.Size(231, 24);
             this.txtUsuario.TabIndex = 2;
             // 
             // lblUsuario
@@ -122,16 +135,6 @@
             this.lblUsuario.Size = new System.Drawing.Size(77, 15);
             this.lblUsuario.TabIndex = 1;
             this.lblUsuario.Text = "Usuario";
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(71, 141);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(190, 24);
-            this.lblTitulo.TabIndex = 7;
-            this.lblTitulo.Text = "BuilderTools";
             // 
             // ptbTitulo
             // 

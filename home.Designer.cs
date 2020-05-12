@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnCerrar_Sesion = new System.Windows.Forms.Button();
             this.lblHome = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblAdministrador = new System.Windows.Forms.Label();
+            this.ptbUsuario = new System.Windows.Forms.PictureBox();
             this.lblBuilderTools = new System.Windows.Forms.Label();
             this.lblCalcularObra = new System.Windows.Forms.Label();
             this.lblMisObras = new System.Windows.Forms.Label();
             this.lblSoporteTecnico = new System.Windows.Forms.Label();
-            this.btnCerrar_Sesion = new System.Windows.Forms.Button();
             this.btnAyuda = new System.Windows.Forms.Button();
             this.btnMisObras = new System.Windows.Forms.Button();
             this.btnCalcularObra = new System.Windows.Forms.Button();
-            this.ptbUsuario = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbUsuario)).BeginInit();
@@ -55,6 +55,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(599, 62);
             this.panel2.TabIndex = 1;
+            // 
+            // btnCerrar_Sesion
+            // 
+            this.btnCerrar_Sesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.btnCerrar_Sesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar_Sesion.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar_Sesion.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCerrar_Sesion.Location = new System.Drawing.Point(460, 16);
+            this.btnCerrar_Sesion.Name = "btnCerrar_Sesion";
+            this.btnCerrar_Sesion.Size = new System.Drawing.Size(127, 32);
+            this.btnCerrar_Sesion.TabIndex = 6;
+            this.btnCerrar_Sesion.Text = "Cerrar sesión";
+            this.btnCerrar_Sesion.UseVisualStyleBackColor = false;
+            this.btnCerrar_Sesion.Click += new System.EventHandler(this.btnCerrar_Sesion_Click);
             // 
             // lblHome
             // 
@@ -86,6 +100,17 @@
             this.lblAdministrador.Size = new System.Drawing.Size(151, 16);
             this.lblAdministrador.TabIndex = 2;
             this.lblAdministrador.Text = "Administrador";
+            this.lblAdministrador.Click += new System.EventHandler(this.lblAdministrador_Click);
+            // 
+            // ptbUsuario
+            // 
+            this.ptbUsuario.Image = global::BuilderTools.Properties.Resources.usuariohome;
+            this.ptbUsuario.Location = new System.Drawing.Point(52, 86);
+            this.ptbUsuario.Name = "ptbUsuario";
+            this.ptbUsuario.Size = new System.Drawing.Size(111, 109);
+            this.ptbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbUsuario.TabIndex = 0;
+            this.ptbUsuario.TabStop = false;
             // 
             // lblBuilderTools
             // 
@@ -127,19 +152,6 @@
             this.lblSoporteTecnico.TabIndex = 7;
             this.lblSoporteTecnico.Text = "Soporte técnico";
             // 
-            // btnCerrar_Sesion
-            // 
-            this.btnCerrar_Sesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.btnCerrar_Sesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar_Sesion.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrar_Sesion.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCerrar_Sesion.Location = new System.Drawing.Point(460, 16);
-            this.btnCerrar_Sesion.Name = "btnCerrar_Sesion";
-            this.btnCerrar_Sesion.Size = new System.Drawing.Size(127, 32);
-            this.btnCerrar_Sesion.TabIndex = 6;
-            this.btnCerrar_Sesion.Text = "Cerrar sesión";
-            this.btnCerrar_Sesion.UseVisualStyleBackColor = false;
-            // 
             // btnAyuda
             // 
             this.btnAyuda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
@@ -149,6 +161,7 @@
             this.btnAyuda.Size = new System.Drawing.Size(160, 148);
             this.btnAyuda.TabIndex = 4;
             this.btnAyuda.UseVisualStyleBackColor = false;
+            this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
             // 
             // btnMisObras
             // 
@@ -160,6 +173,7 @@
             this.btnMisObras.Size = new System.Drawing.Size(160, 148);
             this.btnMisObras.TabIndex = 3;
             this.btnMisObras.UseVisualStyleBackColor = false;
+            this.btnMisObras.Click += new System.EventHandler(this.btnMisObras_Click);
             // 
             // btnCalcularObra
             // 
@@ -170,16 +184,7 @@
             this.btnCalcularObra.Size = new System.Drawing.Size(160, 148);
             this.btnCalcularObra.TabIndex = 2;
             this.btnCalcularObra.UseVisualStyleBackColor = false;
-            // 
-            // ptbUsuario
-            // 
-            this.ptbUsuario.Image = global::BuilderTools.Properties.Resources.usuariohome;
-            this.ptbUsuario.Location = new System.Drawing.Point(52, 86);
-            this.ptbUsuario.Name = "ptbUsuario";
-            this.ptbUsuario.Size = new System.Drawing.Size(111, 109);
-            this.ptbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbUsuario.TabIndex = 0;
-            this.ptbUsuario.TabStop = false;
+            this.btnCalcularObra.Click += new System.EventHandler(this.btnCalcularObra_Click);
             // 
             // home
             // 

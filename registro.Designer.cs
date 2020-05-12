@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.txtE_mail = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
@@ -37,9 +38,8 @@
             this.lblE_mail = new System.Windows.Forms.Label();
             this.lblApellido = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.lblRegistroUsuario = new System.Windows.Forms.Label();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.ptBRegistroUsuario = new System.Windows.Forms.PictureBox();
+            this.lblRegistroUsuario = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptBRegistroUsuario)).BeginInit();
             this.SuspendLayout();
@@ -63,45 +63,61 @@
             this.panel1.Size = new System.Drawing.Size(376, 392);
             this.panel1.TabIndex = 0;
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardar.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnGuardar.Location = new System.Drawing.Point(138, 344);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(101, 28);
+            this.btnGuardar.TabIndex = 11;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
             // txtContraseña
             // 
             this.txtContraseña.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.txtContraseña.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtContraseña.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.Location = new System.Drawing.Point(137, 263);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(187, 25);
+            this.txtContraseña.PasswordChar = '*';
+            this.txtContraseña.Size = new System.Drawing.Size(187, 24);
             this.txtContraseña.TabIndex = 9;
             // 
             // txtE_mail
             // 
             this.txtE_mail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.txtE_mail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtE_mail.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtE_mail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtE_mail.Location = new System.Drawing.Point(137, 215);
             this.txtE_mail.Name = "txtE_mail";
-            this.txtE_mail.Size = new System.Drawing.Size(187, 25);
+            this.txtE_mail.Size = new System.Drawing.Size(187, 24);
             this.txtE_mail.TabIndex = 8;
             // 
             // txtApellido
             // 
             this.txtApellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtApellido.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellido.Location = new System.Drawing.Point(137, 164);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(187, 25);
+            this.txtApellido.Size = new System.Drawing.Size(187, 24);
             this.txtApellido.TabIndex = 7;
             // 
             // txtNombre
             // 
             this.txtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNombre.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombre.Location = new System.Drawing.Point(137, 114);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(187, 25);
+            this.txtNombre.Size = new System.Drawing.Size(187, 24);
             this.txtNombre.TabIndex = 6;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // lblContraseña
             // 
@@ -143,29 +159,6 @@
             this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "Nombre";
             // 
-            // lblRegistroUsuario
-            // 
-            this.lblRegistroUsuario.AutoSize = true;
-            this.lblRegistroUsuario.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistroUsuario.Location = new System.Drawing.Point(4, 23);
-            this.lblRegistroUsuario.Name = "lblRegistroUsuario";
-            this.lblRegistroUsuario.Size = new System.Drawing.Size(310, 24);
-            this.lblRegistroUsuario.TabIndex = 0;
-            this.lblRegistroUsuario.Text = "Registro de usuario ";
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnGuardar.Location = new System.Drawing.Point(138, 344);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(101, 28);
-            this.btnGuardar.TabIndex = 11;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            // 
             // ptBRegistroUsuario
             // 
             this.ptBRegistroUsuario.Image = global::BuilderTools.Properties.Resources.Usuario;
@@ -175,6 +168,16 @@
             this.ptBRegistroUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptBRegistroUsuario.TabIndex = 1;
             this.ptBRegistroUsuario.TabStop = false;
+            // 
+            // lblRegistroUsuario
+            // 
+            this.lblRegistroUsuario.AutoSize = true;
+            this.lblRegistroUsuario.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegistroUsuario.Location = new System.Drawing.Point(4, 23);
+            this.lblRegistroUsuario.Name = "lblRegistroUsuario";
+            this.lblRegistroUsuario.Size = new System.Drawing.Size(310, 24);
+            this.lblRegistroUsuario.TabIndex = 0;
+            this.lblRegistroUsuario.Text = "Registro de usuario ";
             // 
             // registro
             // 
