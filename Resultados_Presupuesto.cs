@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BuilderTools
 {
-    public partial class Form1 : Form
+    public partial class Resultados_Presupuesto : Form
     {
-        public Form1()
+        public Resultados_Presupuesto()
         {
             InitializeComponent();
         }
