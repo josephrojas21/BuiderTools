@@ -17,7 +17,7 @@ namespace BuilderTools
         public login()
         {
             InitializeComponent();
-            cn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=E:\\Documents\\BuiderTools\\BuilderTools.mdf;Integrated Security=false;Connect Timeout=30");
+            cn = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\PC\\Documents\\U\\BuiderTools\\BuilderTools.mdf;Integrated Security=false;Connect Timeout=30");
             //abre conexion
             cn.Open();
         }

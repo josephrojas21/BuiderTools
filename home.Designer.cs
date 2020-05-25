@@ -51,20 +51,20 @@
             this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.Controls.Add(this.btnCerrar_Sesion);
             this.panel2.Controls.Add(this.lblHome);
-            this.panel2.Location = new System.Drawing.Point(205, -2);
+            this.panel2.Location = new System.Drawing.Point(254, -2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(599, 62);
+            this.panel2.Size = new System.Drawing.Size(1115, 153);
             this.panel2.TabIndex = 1;
             // 
             // btnCerrar_Sesion
             // 
             this.btnCerrar_Sesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.btnCerrar_Sesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar_Sesion.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar_Sesion.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCerrar_Sesion.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCerrar_Sesion.Location = new System.Drawing.Point(460, 16);
+            this.btnCerrar_Sesion.Location = new System.Drawing.Point(930, 56);
             this.btnCerrar_Sesion.Name = "btnCerrar_Sesion";
-            this.btnCerrar_Sesion.Size = new System.Drawing.Size(127, 32);
+            this.btnCerrar_Sesion.Size = new System.Drawing.Size(165, 42);
             this.btnCerrar_Sesion.TabIndex = 6;
             this.btnCerrar_Sesion.Text = "Cerrar sesión";
             this.btnCerrar_Sesion.UseVisualStyleBackColor = false;
@@ -73,10 +73,10 @@
             // lblHome
             // 
             this.lblHome.AutoSize = true;
-            this.lblHome.Font = new System.Drawing.Font("Lucida Console", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHome.Location = new System.Drawing.Point(30, 21);
+            this.lblHome.Font = new System.Drawing.Font("Lucida Console", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHome.Location = new System.Drawing.Point(23, 47);
             this.lblHome.Name = "lblHome";
-            this.lblHome.Size = new System.Drawing.Size(97, 27);
+            this.lblHome.Size = new System.Drawing.Size(228, 65);
             this.lblHome.TabIndex = 1;
             this.lblHome.Text = "Home ";
             // 
@@ -88,16 +88,16 @@
             this.panel1.Controls.Add(this.lblBuilderTools);
             this.panel1.Location = new System.Drawing.Point(-3, -6);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(209, 428);
+            this.panel1.Size = new System.Drawing.Size(259, 716);
             this.panel1.TabIndex = 0;
             // 
             // lblAdministrador
             // 
             this.lblAdministrador.AutoSize = true;
-            this.lblAdministrador.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAdministrador.Location = new System.Drawing.Point(35, 207);
+            this.lblAdministrador.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdministrador.Location = new System.Drawing.Point(36, 312);
             this.lblAdministrador.Name = "lblAdministrador";
-            this.lblAdministrador.Size = new System.Drawing.Size(151, 16);
+            this.lblAdministrador.Size = new System.Drawing.Size(165, 19);
             this.lblAdministrador.TabIndex = 2;
             this.lblAdministrador.Text = "Administrador";
             this.lblAdministrador.Click += new System.EventHandler(this.lblAdministrador_Click);
@@ -105,9 +105,9 @@
             // ptbUsuario
             // 
             this.ptbUsuario.Image = global::BuilderTools.Properties.Resources.usuariohome;
-            this.ptbUsuario.Location = new System.Drawing.Point(52, 86);
+            this.ptbUsuario.Location = new System.Drawing.Point(53, 149);
             this.ptbUsuario.Name = "ptbUsuario";
-            this.ptbUsuario.Size = new System.Drawing.Size(111, 109);
+            this.ptbUsuario.Size = new System.Drawing.Size(132, 129);
             this.ptbUsuario.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptbUsuario.TabIndex = 0;
             this.ptbUsuario.TabStop = false;
@@ -115,40 +115,40 @@
             // lblBuilderTools
             // 
             this.lblBuilderTools.AutoSize = true;
-            this.lblBuilderTools.Font = new System.Drawing.Font("Lucida Console", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuilderTools.Location = new System.Drawing.Point(16, 353);
+            this.lblBuilderTools.Font = new System.Drawing.Font("Lucida Console", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuilderTools.Location = new System.Drawing.Point(15, 494);
             this.lblBuilderTools.Name = "lblBuilderTools";
-            this.lblBuilderTools.Size = new System.Drawing.Size(190, 24);
+            this.lblBuilderTools.Size = new System.Drawing.Size(229, 29);
             this.lblBuilderTools.TabIndex = 1;
             this.lblBuilderTools.Text = "BuilderTools";
             // 
             // lblCalcularObra
             // 
             this.lblCalcularObra.AutoSize = true;
-            this.lblCalcularObra.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCalcularObra.Location = new System.Drawing.Point(252, 310);
+            this.lblCalcularObra.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCalcularObra.Location = new System.Drawing.Point(382, 538);
             this.lblCalcularObra.Name = "lblCalcularObra";
-            this.lblCalcularObra.Size = new System.Drawing.Size(138, 16);
+            this.lblCalcularObra.Size = new System.Drawing.Size(152, 19);
             this.lblCalcularObra.TabIndex = 5;
             this.lblCalcularObra.Text = "Calcular obra";
             // 
             // lblMisObras
             // 
             this.lblMisObras.AutoSize = true;
-            this.lblMisObras.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMisObras.Location = new System.Drawing.Point(463, 310);
+            this.lblMisObras.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMisObras.Location = new System.Drawing.Point(759, 538);
             this.lblMisObras.Name = "lblMisObras";
-            this.lblMisObras.Size = new System.Drawing.Size(98, 16);
+            this.lblMisObras.Size = new System.Drawing.Size(108, 19);
             this.lblMisObras.TabIndex = 6;
             this.lblMisObras.Text = "Mis obras";
             // 
             // lblSoporteTecnico
             // 
             this.lblSoporteTecnico.AutoSize = true;
-            this.lblSoporteTecnico.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoporteTecnico.Location = new System.Drawing.Point(630, 310);
+            this.lblSoporteTecnico.Font = new System.Drawing.Font("Lucida Console", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSoporteTecnico.Location = new System.Drawing.Point(1080, 538);
             this.lblSoporteTecnico.Name = "lblSoporteTecnico";
-            this.lblSoporteTecnico.Size = new System.Drawing.Size(158, 16);
+            this.lblSoporteTecnico.Size = new System.Drawing.Size(174, 19);
             this.lblSoporteTecnico.TabIndex = 7;
             this.lblSoporteTecnico.Text = "Soporte técnico";
             // 
@@ -156,9 +156,9 @@
             // 
             this.btnAyuda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.btnAyuda.Image = global::BuilderTools.Properties.Resources.ayuda;
-            this.btnAyuda.Location = new System.Drawing.Point(628, 149);
+            this.btnAyuda.Location = new System.Drawing.Point(1029, 287);
             this.btnAyuda.Name = "btnAyuda";
-            this.btnAyuda.Size = new System.Drawing.Size(160, 148);
+            this.btnAyuda.Size = new System.Drawing.Size(263, 228);
             this.btnAyuda.TabIndex = 4;
             this.btnAyuda.UseVisualStyleBackColor = false;
             this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
@@ -168,9 +168,9 @@
             this.btnMisObras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.btnMisObras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMisObras.Image = global::BuilderTools.Properties.Resources.lista;
-            this.btnMisObras.Location = new System.Drawing.Point(431, 149);
+            this.btnMisObras.Location = new System.Drawing.Point(688, 287);
             this.btnMisObras.Name = "btnMisObras";
-            this.btnMisObras.Size = new System.Drawing.Size(160, 148);
+            this.btnMisObras.Size = new System.Drawing.Size(248, 228);
             this.btnMisObras.TabIndex = 3;
             this.btnMisObras.UseVisualStyleBackColor = false;
             this.btnMisObras.Click += new System.EventHandler(this.btnMisObras_Click);
@@ -179,9 +179,9 @@
             // 
             this.btnCalcularObra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.btnCalcularObra.Image = global::BuilderTools.Properties.Resources.calcular;
-            this.btnCalcularObra.Location = new System.Drawing.Point(240, 149);
+            this.btnCalcularObra.Location = new System.Drawing.Point(344, 287);
             this.btnCalcularObra.Name = "btnCalcularObra";
-            this.btnCalcularObra.Size = new System.Drawing.Size(160, 148);
+            this.btnCalcularObra.Size = new System.Drawing.Size(242, 228);
             this.btnCalcularObra.TabIndex = 2;
             this.btnCalcularObra.UseVisualStyleBackColor = false;
             this.btnCalcularObra.Click += new System.EventHandler(this.btnCalcularObra_Click);
@@ -191,7 +191,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.ClientSize = new System.Drawing.Size(800, 405);
+            this.ClientSize = new System.Drawing.Size(1370, 701);
             this.Controls.Add(this.lblSoporteTecnico);
             this.Controls.Add(this.lblMisObras);
             this.Controls.Add(this.lblCalcularObra);
@@ -203,6 +203,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Name = "home";
             this.Text = "home";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
